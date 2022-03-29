@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.5rem;
+}
+
+.cards-container {
+    min-width: 320px;
+    max-width: 327px;
+    margin: 2.4rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.card {
+    padding: 4.8rem;
+}
+
+.card-header {
+    padding-top: 3rem;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+}
+
+.card-text {
+    padding-top: 3rem;
+    line-height: 2.6rem;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.btn {
+    margin-top: 3rem;
+    padding: 1.4rem 2.8rem;
+    font-family: inherit;
+    border: none;
+    border-radius: 50px;
+    background-color: hsl(0, 0%, 95%);
+    mix-blend-mode: screen;
+    cursor: pointer;
+}
+
+.card:nth-child(1) {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.card:nth-child(2) {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card:nth-child(3) {
+    background-color: hsl(179, 100%, 13%);
+}
+
+@media (min-width: 1024px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .cards-container {
+        display: flex;
+        flex-basis: auto;
+        max-width: 920px;
+    }
+
+    .card {
+        flex: 1;
+    }
+
+    .btn {
+        margin-top: 8.6rem;
+        border: 2px solid hsl(0, 0%, 95%);
+    }
+
+    .btn:hover {
+        background: none;
+        color: hsl(0, 0%, 95%);
+    }
+}
